@@ -1,0 +1,27 @@
+{
+    "education": [
+      {
+        "period": "August 2018 - June 2021",
+        "institution": "Bømlo Videregående skule",
+        "details": [
+          "Realfag",
+          "Studiespesialisering",
+          "Matematikk R1,R2",
+          "Informasjonsteknologi 1, 2",
+          "Psykologi 1",
+          "Russisk nivå II - Privatist",
+          "Fysikk 1 - Privatist"
+        ]
+      },
+      {
+        "period": "August 2021 - August 2024",
+        "institution": "Universitet i Bergen",
+        "details": [
+          "Informatikk: Dataskkerhet, bachelor, 3 år",
+          "Studie går innan programvaresikkerhet og anvendt kryptografi teoretisk og praktisk for datasikkerhet studiet. Uten om har studie valmene. Det eg har valgt var innen maskinlæring, kunstig intelligens og Human Computer Interaction.",
+          "Utveksling til Japan 24. Mars - 1. August 2024"
+        ]
+      }
+    ]
+  }
+  

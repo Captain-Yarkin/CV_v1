@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    background-color: #f0f0f0; /* Light grey background */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    padding: 20px;
+    margin-bottom: 20px; /* Adds space between sections */
+    width: 40%; /* Adjusts the width of the section. You can set this as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
+}
+
+.personal-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.personal-info {
+    text-align: left;
+}
+
+.personal-photo img {
+    width: 150px; /* Adjust based on your preference */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional for rounded corners */
+}
+
+.education-container, .work-container {
+    text-align: left; /* Ensures the education and work details are aligned to the left */
+}
+
+ul {
+    list-style-position: outside; /* Positions the bullet outside the list item */
+    padding-left: 20px; /* Adjusts the padding to ensure proper alignment */
+}
+
+li {
+    text-align: left; /* Ensures text is aligned to the left */
+    display: list-item; /* Ensures the item is displayed as a list item */
+    margin: 5px 0; /* Adds some spacing between list items */
+}
