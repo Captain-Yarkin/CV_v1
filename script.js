@@ -32,6 +32,33 @@ function displayWork(data) {
   });
 }
 
+// Function to fetch and display other information
+fetch('otherInfo.json')
+  .then(response => response.json())
+  .then(data => displayOtherInfo(data))
+  .catch(error => console.error('Error loading the other information data:', error));
+
+function displayOtherInfo(data) {
+  const container = document.getElementById('otherInfo'); // Assuming you have a div with this id
+  data.otherInfo.forEach(info => {
+    const infoBlock = document.createElement('div');
+    
+    let detailsList = '';
+    if (Array.isArray(info.info)) { // Check if info is an array to handle it properly
+      detailsList = `<ul>${info.info.map(detail => `<li>${detail}</li>`).join('')}</ul>`;
+    } else { // If it's not an array, just use it as a string
+      detailsList = `<p>${info.info}</p>`;
+    }
+    
+    infoBlock.innerHTML = `<h2>${info.period}</h2>
+                           <h3>${info.name}</h3>
+                           ${detailsList}`;
+    container.appendChild(infoBlock);
+  });
+}
+
+
+
 
 // New functions to change the photo on hover
 function changePhoto(imageElement) {
