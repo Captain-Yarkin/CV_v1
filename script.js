@@ -57,9 +57,6 @@ function displayOtherInfo(data) {
   });
 }
 
-
-
-
 // New functions to change the photo on hover
 function changePhoto(imageElement) {
     imageElement.src = 'IMG_0340_laugh.jpg'; // Path to the photo shown on hover
@@ -68,3 +65,17 @@ function changePhoto(imageElement) {
   function revertPhoto(imageElement) {
     imageElement.src = 'IMG_0341_nlaugh.jpg'; // Original path to the photo
   }
+
+
+  document.querySelectorAll('.toggle-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+  
+        button.classList.toggle('active');
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+        }
+    });
+  });

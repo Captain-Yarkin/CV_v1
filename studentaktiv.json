@@ -1,0 +1,20 @@
+{
+    "studentAktivites": [
+
+        {
+            "period": "Februar 2022 - Nåværende",
+            "name": "BSI Volleyball",
+            "info": [
+                "Styremedlem",
+                "Marknadsansvarlig",
+                "Trener for damelaget D5"
+            ]
+        },
+        {
+            "period": "August 2021 - Mars 2024",
+            "name": "Integrerbar",
+            "info": "Frivillig i bar"
+        }
+
+    ]
+}

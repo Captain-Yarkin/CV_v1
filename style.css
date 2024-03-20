@@ -7,13 +7,36 @@ body {
     align-items: center;
 }
 
+/* Add to your style.css */
+.toggle-button {
+    background-color: #f0f0f0; /* Light grey */
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #ddd; /* Slightly darker grey on hover */
+}
+
+.content {
+    overflow: hidden;
+    margin: 0 auto;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
 .section {
     background-color: #f0f0f0; /* Light grey background */
     border-radius: 8px; /* Optional: adds rounded corners */
     padding: 20px;
+    
     margin-bottom: 20px; /* Adds space between sections */
     width: 40%; /* Adjusts the width of the section. You can set this as needed */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
 }
 
 .personal-section {
@@ -39,11 +62,31 @@ body {
 
 ul {
     list-style-position: outside; /* Positions the bullet outside the list item */
-    padding-left: 20px; /* Adjusts the padding to ensure proper alignment */
+    padding-left: 30px; /* Adjusts the padding to ensure proper alignment */
 }
 
 li {
     text-align: left; /* Ensures text is aligned to the left */
     display: list-item; /* Ensures the item is displayed as a list item */
-    margin: 5px 0; /* Adds some spacing between list items */
+    margin: 5px auto; /* Adds some spacing between list items */
+}
+
+footer {
+    background-color: #e9e9e9; /* Dark grey background for the footer */
+    color: rgb(0, 0, 0); /* White text color */
+    text-align: center; /* Center the text inside the footer */
+   
+    width: 110%; /* Ensure it covers the full width */
+    bottom: 0; /* Align at the bottom of the page */
+    left: 0; /* Align to the left side of the page */
+}
+
+footer a {
+    color: rgb(0, 0, 0); /* White text color for links */
+    text-decoration: none; /* No underline */
+    padding: 0 10px; /* Spacing between links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover for better user experience */
 }
